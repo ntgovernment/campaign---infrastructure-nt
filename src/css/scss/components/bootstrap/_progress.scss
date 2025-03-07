@@ -1,0 +1,11 @@
+.progress {
+  --bs-border-radius: 0;
+
+  @include media-breakpoint-up(lg) {
+    --bs-progress-height: 1.25rem;
+  }
+}
+
+.progress-bar {
+  --bs-progress-bar-bg: #{$info};
+}

@@ -1,0 +1,30 @@
+// allows the use of variables in svg data urls (must use HEX values)
+@function url-friendly-colour($colour) {
+    @return '%23'+str-slice('#{$colour}', 2, -1);
+}
+
+@mixin focus($important: false) {
+    box-shadow: none !important;
+
+    @if $important ==true {
+        outline: $focus-width solid $focus-color !important;
+        outline-offset: $outline-offset-width !important;
+    }
+
+    @else {
+        outline: $focus-width solid $focus-color;
+        outline-offset: $outline-offset-width;
+    }
+
+}
+
+@mixin sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

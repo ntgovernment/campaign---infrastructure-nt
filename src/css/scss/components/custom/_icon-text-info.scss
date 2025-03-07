@@ -1,0 +1,13 @@
+.ntg-icon-text-info {
+  $this: &;
+
+  .row.icon-text-info-row {
+    --bs-gutter-y: 1.5rem;
+    --bs-gutter-x: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      --bs-gutter-y: 2.5rem;
+    }
+  }
+
+}

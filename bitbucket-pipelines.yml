@@ -1,0 +1,25 @@
+image: node:16.14.0
+
+pipelines:
+  default:
+    - step:
+        name: Generate static files for staging
+        caches:
+         - node
+        script:
+          - npm install
+          - npm run static-prod
+        artifacts:
+         - dist/**
+    - step:
+        name: Deploy static files to server using SCP
+        deployment: staging
+        script:
+          - pipe: atlassian/rsync-deploy:0.4.0
+            variables:
+              USER: "stagmatrix"
+              SERVER: $SERVER
+              REMOTE_PATH: "./public_html/infrastructure-nt"
+              LOCAL_PATH: "dist/**"
+              SSH_PORT: $PORT
+              EXTRA_ARGS: "-azP"

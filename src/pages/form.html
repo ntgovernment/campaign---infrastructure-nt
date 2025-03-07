@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Form | Brainium Starter Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/f8d3342cae.js" crossorigin="anonymous"></script>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="skip-link" aria-label="skip links navigation">
+                <a class="skip-link__link" href="#content">Skip to main content</a>
+                <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+            </nav>
+    
+            <nav class="nav-menu-mobile" id="mmenu-wrapper">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                        <ul>
+                            <li><a href="./news-item.html">News item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./components.html">Components</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="search-global">
+                <form action="/search/" method="get" accept-charset="UTF-8">
+                    <div class="search-global__row">
+                        <div class="search-global__field search-global__field--form">
+                            <label for="queries_name_query" class="sr-only">Search</label>
+                            <input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15" maxlength="128" class="form-search" placeholder="Search" />
+                            <button type="submit" id="edit-submit">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Popular searches</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Recently updated pages</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" title="Close search" class="search-global__close">Close</a>
+                </form>
+            </div>
+
+            <div class="page-header-container">
+                <header class="ntg-header" role="banner">
+                    <div class="container">
+                        <div class="ntg-header__wrapper">
+                            <a class="ntg-header__logo" href="./index.html">
+                                <img class="ntg-header__image" alt="Northern Territory Government Logo" src="assets/images/logo-ntg-reverse.svg" width="198" height="71" />
+                            </a>
+                            <a class="ntg-header__text" href="./index.html">
+                                <h2 class="ntg-header__title">Squiz Matrix Template</h2>
+                                <div class="ntg-header__subtitle">Created by Brainium Labs</div>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <nav class="ntg-main-nav" id="mainmenu">
+                    <div class="container">
+                        <div class="ntg-main-nav__wrapper">
+                            <ul class="ntg-main-nav__links sf-menu">
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="./content.html">
+                                        Content
+                                    </a>
+                                    <ul>
+                                        <li class="has-children">
+                                            <a href="./content.html">
+                                                Content
+                                            </a>
+                                            <ul>
+                                                <li><a href="./content.html">Content</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="./form.html">Form</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="./news.html">
+                                        News
+                                    </a>
+                                    <ul>
+                                        <li><a href="./news-item.html">News item</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./components.html">Components</a>
+                                </li>
+                            </ul>
+                            <button class="ntg-main-nav__search">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <div class="ntg-main-nav__mobile">
+                                <a href="#mmenu-wrapper" aria-label="Open or close menu">
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <main class="py-4 py-sm-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 order-2 order-lg-1" id="content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Form</li>
+                                </ol>
+                            </nav>
+
+                            <h1>Form</h1>
+
+                            <form>
+                                <fieldset class="sq-form-section">
+                                    <legend class="sq-form-section-title">Inputs</legend>
+
+                                    <div class="sq-form-question sq-form-question-text sq-form-question-error">
+                                        <label class="sq-form-question-title" for="q990964_q1">Text <abbr class="sq-form-required-field" title="required">*</abbr></label>
+                                        <div class="sq-form-question-answer">
+                                            <input type="text" name="q990964:q1" value="" size="30" maxlength="300" id="q990964_q1" class="sq-form-field" />
+                                        </div>
+                                        <p class="sq-form-error">This field is required. Please enter a value.</p>
+                                    </div>
+
+                                    <div class="sq-form-question sq-form-question-email-address">
+                                        <label class="sq-form-question-title" for="q990964_q2">Email</label>
+                                        <div class="sq-form-question-answer">
+                                            <input type="email" name="q990964:q2" value="" size="30" maxlength="300" id="q990964_q2" class="sq-form-field" />
+                                        </div>
+                                    </div>
+
+                                    <div class="sq-form-question sq-form-question-text">
+                                        <label class="sq-form-question-title" for="q990964_q3">Phone</label>
+                                        <div class="sq-form-question-answer">
+                                            <input type="tel" name="q990964:q3" value="" size="30" maxlength="300" id="q990964_q3" class="sq-form-field" />
+                                        </div>
+                                    </div>
+
+                                    <div class="sq-form-question sq-form-question-text">
+                                        <label class="sq-form-question-title" for="q990965_q4">Text area <abbr class="sq-form-required-field" title="required">*</abbr></label>
+                                        <div class="sq-form-question-answer">
+                                            <textarea name="q990965:q4" id="q990965_q4" cols="30" rows="3" class="sq-form-field"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="sq-form-section">
+                                    <legend class="sq-form-section-title">Radios</legend>
+
+                                    <div class="sq-form-question sq-form-question-option-list">
+                                        <fieldset>
+                                            <legend class="sq-form-question-title">Radio Label <abbr class="sq-form-required-field" title="required">*</abbr></legend>
+
+                                            <div class="sq-form-question-answer">
+                                                <ul>
+                                                    <li><input type="radio" name="q990965:q1" id="q990965_q1_0" value="0" class="sq-form-field" /> <label for="q990965_q1_0">Option 1</label></li>
+                                                    <li><input type="radio" name="q990965:q1" id="q990965_q1_1" value="1" class="sq-form-field" /> <label for="q990965_q1_1">Option 2</label></li>
+                                                    <li><input type="radio" name="q990965:q1" id="q990965_q1_2" value="2" class="sq-form-field" /> <label for="q990965_q1_2">Option 3</label></li>
+                                                    <li><input type="radio" name="q990965:q1" id="q990965_q1_3" value="3" class="sq-form-field" /> <label for="q990965_q1_3">Option 4</label></li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="sq-form-section">
+                                    <legend class="sq-form-section-title">Checkboxes</legend>
+
+                                    <div class="sq-form-question sq-form-question-tickbox-list">
+                                        <fieldset>
+                                            <legend class="sq-form-question-title">Checkbox Label <abbr class="sq-form-required-field" title="required">*</abbr></legend>
+
+                                            <div class="sq-form-question-answer">
+                                                <ul>
+                                                    <li><input type="checkbox" name="q990965:q2" id="q990965_q2_0" value="0" class="sq-form-field" /> <label for="q990965_q2_0">Option 1</label></li>
+                                                    <li><input type="checkbox" name="q990965:q2" id="q990965_q2_1" value="1" class="sq-form-field" /> <label for="q990965_q2_1">Option 2</label></li>
+                                                    <li><input type="checkbox" name="q990965:q2" id="q990965_q2_2" value="2" class="sq-form-field" /> <label for="q990965_q2_2">Option 3</label></li>
+                                                    <li><input type="checkbox" name="q990965:q2" id="q990965_q2_3" value="3" class="sq-form-field" /> <label for="q990965_q2_3">Option 4</label></li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="sq-form-section">
+                                    <legend class="sq-form-section-title">Select</legend>
+
+                                    <div class="sq-form-question sq-form-question-select">
+                                        <label class="sq-form-question-title" for="q1000093_q4">Select Label <abbr class="sq-form-required-field" title="required">*</abbr></label>
+                                        <div class="sq-form-question-answer">
+                                            <select name="q1000093:q4" id="q1000093_q4" class="sq-form-field">
+                                                <option value="none" selected="selected">-- Please Select --</option>
+                                                <option value="option_1">Option 1</option>
+                                                <option value="option_2">Option 2</option>
+                                                <option value="option_3">Option 3</option>
+                                                <option value="option_4">Option 4</option>
+                                                <option value="option_5">Option 5</option>
+                                                <option value="option_6">Option 6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="sq-form-section">
+                                    <legend class="sq-form-section-title">Upload</legend>
+                                    <div class="sq-form-question sq-form-question-file-upload">
+                                        <label class="sq-form-question-title" for="q1000383_q1">Upload Label</label>
+                                        <div class="sq-form-question-answer">
+                                            <div class="sq-form-upload-wrapper" id="sq_form_upload_wrapper_q1000383_q1">
+                                                <div class="sq-form-upload">
+                                                    <input type="file" name="q1000383:q1[]" id="q1000383_q1" class="sq-form-field" />
+                                                </div>
+                                                <div class="sq-form-upload">
+                                                    <input type="file" name="q1000383:q1[]" id="q1000383_q1_2" class="sq-form-field" "=""><input
+                                                        type="button"
+                                                        value="-"
+                                                        title="Delete"
+                                                        class="sq-form-upload-delete-button"
+                                                        onclick="update_file_upload_element_for_q1000383_q1(event, 'delete')"
+                                                    />
+                                                </div>
+                                                <div class="sq-form-upload-add-btn-wrapper">
+                                                    <input type="button" value="+" title="Add" class="sq-form-upload-add-btn" onclick="update_file_upload_element_for_q1000383_q1(event, 'add')" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="sq-form-control">
+                                    <input type="submit" name="form_email_990957_submit" value="Submit" class="sq-form-submit" id="form_email_990957_submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="back-to-top" aria-hidden="true">
+                <button>
+                    <span class="visually-hidden">Back to top</span>
+                    <i class="far fa-chevron-up"></i>
+                </button>
+            </div>
+
+            <footer class="ntg-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-xl-10">
+                            <div class="row">
+                                <nav class="col" aria-label="footer">
+                                    <ul>
+                                        <li>
+                                            <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy">Copyright, disclaimer and privacy&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/law/rights/freedom-of-information">Freedom of information&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/page/interpreter-services">Interpreter services&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><span>Site map</span></a></li>
+                                        <li><a href="#"><span>Contacts</span></a></li>
+                                        <li><a href="#"><span>Feedback</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col">
+                                    <p>© 2022 Northern Territory Government.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" target="_blank" title="Opens in a new window">
+                                        <img alt="Northern Territory Government Logo" src="assets/images/logo-ntg-reverse.svg" width="198" height="71" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</html>

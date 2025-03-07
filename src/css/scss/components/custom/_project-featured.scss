@@ -1,0 +1,29 @@
+.ntg-cards {
+  --ntg-card--header-margin-bottom: 1.5rem;
+  --ntg-card--header-border-color: #ccc;
+  --ntg-card-paddint-top: 3rem;
+  --ntg-card-paddint-bottom: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    --ntg-card-paddint-top: 5rem;
+    --ntg-card-paddint-bottom: 5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    --ntg-card--header-margin-bottom: 2rem;
+  }
+
+  &--featured-project {
+    padding-top: var(--ntg-card-paddint-top);
+    padding-bottom: var(--ntg-card-paddint-bottom);
+
+    header {
+      border-bottom: 1px solid var(--ntg-card--header-border-color);
+      margin-bottom: var(--ntg-card--header-margin-bottom);
+
+      h2 {
+        font-weight: 700;
+      }
+    }
+  }
+}

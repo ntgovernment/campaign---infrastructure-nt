@@ -1,0 +1,38 @@
+[class^='icon-'],
+[class*=' icon-'],
+.fa {
+    &:before,
+    &:after {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Font Awesome 5 Pro' !important;
+        font-weight: 400;
+    }
+}
+
+.fab {
+    &:before,
+    &:after {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Font Awesome 5 Brands' !important;
+        font-weight: 400;
+    }
+}
+
+.fas,
+.far,
+.fal,
+.fak {
+    font-family: 'Font Awesome 5 Pro' !important;
+    font-style: normal !important;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

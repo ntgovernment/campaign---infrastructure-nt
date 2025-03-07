@@ -1,0 +1,32 @@
+.nav-tabs {
+  --bs-nav-link-color: #{$gray-600};
+  --bs-nav-link-font-weight: 700;
+
+  @include media-breakpoint-down(lg) {
+    --bs-nav-link-font-size: 1.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    --bs-nav-link-font-size: 1.60rem;
+  }
+
+  .nav-link {
+
+    &.active {
+      border-top-color: $nav-tabs-link-hover-border-color;
+      border-left-color: $nav-tabs-link-hover-border-color;
+      border-right-color: $nav-tabs-link-hover-border-color;
+    }
+
+  }
+}
+
+.tab-pane-content {
+  --bs-tab-content-padding-y: 1.5rem;
+  padding: var(--bs-tab-content-padding-y) 0;
+  padding-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    --bs-tab-content-padding-y: 1.5rem;
+  }
+}

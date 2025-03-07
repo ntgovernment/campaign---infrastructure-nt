@@ -1,0 +1,185 @@
+.interactive-map {
+    position: relative;
+
+    .map-links-container {
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(xl) {
+            height: 1px;
+            margin-bottom: 0;
+        }
+    }
+
+    .map-links {
+        padding: 2rem;
+        z-index: 1;
+        width: 100%;
+
+        @media (min-width: 2400px) {
+            right: -200px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            position: absolute;
+            right: 100px;
+            max-width: 475px;
+        }
+
+        @media (min-width: 2600px) {
+            right: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        a {
+            color: #FFF;
+            @extend .h5;
+            line-height: 1.5;
+            transition: 0.2s all ease-in-out;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+            }
+
+            i {
+                opacity: 0;
+                margin-left: 0.5rem;
+                font-size: var(--h6-size);
+                transition: 0.2s ease-in-out opacity;
+            }
+
+            &:hover,
+            &:focus,
+            &.hover {
+                color: #BDBDBD;
+                text-decoration-color: #BDBDBD !important;
+                
+                i {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .btn-project-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--p-size);
+            transition: 0.2s all ease-in-out;
+            --bs-btn-padding-y: 0.5rem;
+
+            &.hover {
+                color: var(--bs-btn-hover-color);
+                background-color: var(--bs-btn-hover-bg);
+                border-color: var(--bs-btn-hover-border-color);
+            }
+
+            .btn-text-hold {
+                text-align: left;
+                flex-grow: 1;
+
+                &::after {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .map-section {
+        overflow: hidden;
+        width: 100%;
+        height: 110vw;
+
+        @include media-breakpoint-up(lg) {
+            height: 90vw;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 1110px;
+        }
+        
+        @media (min-width: 2400px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        #map-australia {
+            width: 100%;
+            transform: scale(2.5);
+            transform-origin: top;
+            margin-left: 0;
+            height: auto;
+
+            @include media-breakpoint-up(lg) {
+                transform: scale(2);
+            }
+
+            @include media-breakpoint-up(xl) {
+                width: 1800px;
+                height: auto;
+                transform: scale(1.35);
+                margin-left: -500px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                margin-left: -300px;
+            }
+
+            @media (min-width: 2100px) {
+                margin-left: -150px;
+            }
+
+            @media (min-width: 2400px) {
+                margin-left: -400px;
+            }
+
+            
+
+        }
+    }
+
+    #map-australia {
+        .download {
+            display: none;
+        }
+
+        g {
+            cursor: pointer;
+        }
+
+        g path {
+            transition: 0.2s fill ease-in-out;
+        }
+        
+        #northern_territory {
+            g:not(.active):not(.download) {
+                path {
+                    fill: #B599AE;
+                }
+            } 
+            
+            g.active:not(.download) {
+                path{
+                    fill: $purple;
+                }
+
+                > .download {
+                    display: block;
+                }
+            } 
+        }
+
+    }
+
+    
+}

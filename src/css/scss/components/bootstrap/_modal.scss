@@ -1,0 +1,39 @@
+// hiding modal overlay bg
+.modal-backdrop {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.modal {
+  --bs-backdrop-bg: #{$modal-backdrop-bg};
+  --bs-backdrop-opacity: #{$modal-backdrop-opacity};
+  --bs-backdrop-zindex: 100;
+
+  &.show {
+    &:before {
+      opacity: var(--bs-backdrop-opacity);
+    }
+  }
+
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-backdrop-zindex);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg);
+  }
+}
+
+.modal-dialog {
+  --bs-modal-zindex: 1000;
+  z-index: var(--bs-modal-zindex);
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}

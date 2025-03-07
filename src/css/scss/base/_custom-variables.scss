@@ -1,0 +1,265 @@
+$prefix: bs-;
+
+/**
+  * NTG brand colours
+  * Do not edit
+  */
+$ntg-heliconia-orange: #e35205;
+$ntg-arafura-blue: #1f1f5f;
+$ntg-charcoal-grey: #454347;
+$ntg-hot-coral: #c25062;
+$ntg-sky-blue: #127cc0;
+$ntg-teal-blue: #007e91;
+$ntg-rubine-red: #980044;
+$ntg-deep-mauve: #845278;
+$ntg-bottle-green: #1e5e5e;
+/* -------- Bootstrap -------- */
+// enable grid css in bootstrap
+$enable-cssgrid: true;
+
+// Colours
+$gray-600: #828282;
+$gray-700: #4F4F4F;
+$gray-800: #333;
+$gray-900: #111;
+$gun-metal: #2D3039;
+
+$blue: #333370;
+$blue-dark: #1F1F52;
+$blue-darkest: #0b0b44;
+$purple: #8a5c81;
+$light-purple: #B599AE;
+$red: #A9264C;
+$coral: #D75F6F;
+$stroke: #D8D8D8;
+$light-brown: #E6E4DF;
+$vista-white: #F9F8F7;
+$vista-gray: #DCDCDC;
+$white-smoke: #f6f6f6;
+$black: #000;
+$deep-cove: #09093D;
+
+$primary: $blue;
+$secondary: $ntg-sky-blue;
+$body-color: $gray-800;
+$info: #56CCF2;
+$warning: #f69900;
+$danger: $red;
+$success: #0b996c;
+$dark-charcoal: $gray-800;
+
+// Key Global bootstrap options
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  "05": $spacer * 0.5,
+  1: $spacer * 1,
+  2: $spacer * 1.5,
+  3: $spacer * 2,
+  4: $spacer * 2.5,
+  5: $spacer * 3,
+);
+
+$enable-dark-mode: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-reduced-motion: true;
+$enable-grid-classes: true;
+$enable-container-classes: true;
+$enable-caret: true;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: true;
+$enable-negative-margins: false;
+$enable-deprecation-messages: true;
+$enable-important-utilities: true;
+$enable-smooth-scroll: true;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "32x9": calc(9 / 32 * 100%)
+);
+
+// Typography
+$font-lato: 'Lato', var(--bs-font-sans-serif);
+$font-ubuntu: 'Ubuntu', 'Lato', var(--bs-font-sans-serif);
+$font-family-base: $font-ubuntu;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+// Cards
+$card-height: 100%;
+
+// Accordions
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $primary;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+
+// Alerts
+$alert-border-width: 3px;
+
+// Buttons
+$btn-secondary-colour: #fff;
+
+// Breadcrumbs
+$breadcrumb-divider: quote('>');
+$breadcrumb-active-color: $body-color;
+
+// Table
+$table-border-color: $body-color;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1400px,
+  xxl: 1650px) !default;
+// scss-docs-end grid-breakpoints
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints"
+);
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 980px,
+  xl: 1320px,
+  xxl: 1596px) !default;
+// scss-docs-end container-max-widths
+
+@include _assert-ascending($container-max-widths, "$container-max-widths"
+);
+
+// Pagination
+
+// scss-docs-start pagination-variables
+$pagination-bg: var(--#{$prefix}body-bg);
+$pagination-border-width: 2px;
+$pagination-border-radius: 0;
+$pagination-border-color: transparent;
+$pagination-focus-color: #fff;
+$pagination-focus-bg: #{$gun-metal};
+
+$pagination-hover-color: #fff;
+$pagination-hover-bg: #{$gun-metal};
+$pagination-hover-border-color: #{$gun-metal};
+
+$pagination-active-color: #{$gun-metal};
+$pagination-active-bg: transparent;
+$pagination-active-border-color: #{$gun-metal};
+
+$pagination-disabled-color: #{$primary};
+$pagination-disabled-bg: transparent;
+$pagination-disabled-border-color: transparent;
+
+$pagination-border-radius-sm: 0;
+$pagination-border-radius-lg: 0;
+
+// Breadcrumbs
+
+// scss-docs-start breadcrumb-variables
+$breadcrumb-item-padding-x: .65rem;
+$breadcrumb-margin-bottom: 1rem;
+$breadcrumb-bg: #F2F2F2;
+
+// tabs variables
+$nav-tabs-border-color: #000;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: #000;
+$nav-tabs-link-active-color: #000;
+// $nav-tabs-link-active-bg: var(--#{$prefix}body-bg) !default;
+// $nav-tabs-link-active-border-color: #000;
+
+// Modals
+
+// scss-docs-start modal-variables
+// $modal-inner-padding: $spacer !default;
+
+// $modal-footer-margin-between: .5rem !default;
+
+// $modal-dialog-margin: .5rem !default;
+// $modal-dialog-margin-y-sm-up: 1.75rem !default;
+
+// $modal-title-line-height: $line-height-base !default;
+
+// $modal-content-color: null !default;
+// $modal-content-bg: var(--#{$prefix}body-bg) !default;
+// $modal-content-border-color: var(--#{$prefix}border-color-translucent) !default;
+// $modal-content-border-width: var(--#{$prefix}border-width) !default;
+// $modal-content-border-radius: var(--#{$prefix}border-radius-lg) !default;
+// $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
+// $modal-content-box-shadow-xs: var(--#{$prefix}box-shadow-sm) !default;
+// $modal-content-box-shadow-sm-up: var(--#{$prefix}box-shadow) !default;
+
+$modal-backdrop-bg: $blue;
+$modal-backdrop-opacity: .8;
+
+// $modal-header-border-color: var(--#{$prefix}border-color) !default;
+// $modal-header-border-width: $modal-content-border-width !default;
+// $modal-header-padding-y: $modal-inner-padding !default;
+// $modal-header-padding-x: $modal-inner-padding !default;
+// $modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+
+// $modal-footer-bg: null !default;
+// $modal-footer-border-color: $modal-header-border-color !default;
+// $modal-footer-border-width: $modal-header-border-width !default;
+
+// $modal-sm: 300px !default;
+// $modal-md: 500px !default;
+// $modal-lg: 800px !default;
+// $modal-xl: 1140px !default;
+
+// $modal-fade-transform: translate(0, -50px) !default;
+// $modal-show-transform: none !default;
+// $modal-transition: transform .3s ease-out !default;
+// $modal-scale-transform: scale(1.02) !default;
+// scss-docs-end modal-variables
+
+/* -------- Custom -------- */
+
+// These variables are required
+$focus-ring-width: .25rem;
+$focus-ring-opacity: .25;
+$focus-ring-color: rgba($ntg-heliconia-orange, $focus-ring-opacity);
+$focus-ring-blur: 0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+
+//TODO: Check and remove if ok
+$focus-color: $ntg-heliconia-orange;
+$focus-width: 3px;
+$outline-offset-width: 2px;
+
+$animation-speed: 300ms;
+
+$text-shadow: 1px 1px 0.5px #000;
+
+// scss-docs-start headings-variables
+$headings-font-weight: 700;
+
+/* -------- Gradients -------- */
+$black-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 24%, rgba(0, 0, 0, 1) 100%);
+$theme-gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 60.94%, var(--current-theme-color, #fff)); // fallback on white as default
+$black-gradient-subtle: linear-gradient(0, rgba(0, 0, 0, 0.52) 4.18%, rgba(0, 0, 0, 0.00) 38.51%);

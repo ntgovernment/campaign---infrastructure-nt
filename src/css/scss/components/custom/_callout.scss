@@ -1,0 +1,37 @@
+.callout {
+	--callout-color: #{$white};
+	--callout-link-color: #{$white};
+	--callout-bg: #{$light-purple};
+	--callout-padding-y: 2rem;
+	--callout-padding-x: 0;
+	--callout-title-weight: 700;
+	--callout-title-margin-bottom: calc(var(--base-font-size) * .5);
+
+	position: relative;
+	padding: var(--callout-padding-y) var(--callout-padding-x);
+	background: var(--callout-bg);
+	color: var(--callout-color);
+
+	@include media-breakpoint-up(lg) {
+		--callout-padding-y: 3rem;
+	}
+
+	a:not(.btn) {
+		color: var(--callout-link-color);
+	}
+
+	.btn {
+		--bs-btn-font-weight: 700;
+	}
+
+	h3 {
+		font-weight: var(--callout-title-weight);
+		margin-bottom: var(--callout-title-margin-bottom);
+	}
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,127 @@
+.btn {
+	--bs-btn-font-weight: 400;
+	--bs-btn-min-width: 0;
+	--bs-btn-font-size: var(--base-font-size);
+	--bs-btn-width: auto;
+	--bs-btn-border-width: 3px;
+	--bs-btn-text-align: center;
+	--bs-btn-border-radius: 30px;
+	text-align: var(--bs-btn-text-align);
+	width: var(--bs-btn-width);
+	min-width: var(--bs-btn-min-width);
+	border-width: var(--bs-btn-border-width);
+
+	@include media-breakpoint-down(lg) {
+		--bs-btn-padding-x: 1rem;
+		--bs-btn-padding-y: 0.75rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		--bs-btn-padding-x: 1.5rem;
+		--bs-btn-padding-y: .9rem;
+	}
+
+	&:focus {
+		@include focus();
+	}
+
+	&-secondary {
+		color: $btn-secondary-colour;
+
+		&:hover,
+		&:focus {
+			color: $btn-secondary-colour;
+		}
+	}
+
+	&-close {
+		&:focus {
+			@include focus();
+		}
+	}
+
+	&.btn-has-icon {
+		--bs-btn-icon-font-size: 110%;
+		--bs-btn-icon-margin-top: 3px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+
+		&:after {
+			@extend .fas;
+			transition: var(--animation-speed) ease-in-out all;
+			margin-top: var(--bs-btn-icon-margin-top);
+			line-height: 1;
+		}
+	}
+
+	&.btn-right-arrow {
+
+		&:after {
+			font-size: var(--bs-btn-icon-font-size);
+			content: '\f105';
+		}
+
+		&:hover,
+		&:focus {
+
+			&:after {
+				transform: translateX(3px);
+			}
+		}
+	}
+
+	&.btn-white {
+		--bs-btn-hover-bg: #{$gray-200};
+		--bs-btn-hover-border-color: #{$gray-200};
+		--bs-btn-hover-border-color: #{$gray-200};
+		--bs-btn-active-bg: #{$gray-200};
+		--bs-btn-active-border-color: #{$gray-200};
+		--bs-btn-active-border-color: #{$gray-200};
+		--bs-btn-padding-y: .9rem;
+
+		@include media-breakpoint-up(lg) {
+			--bs-btn-padding-x: 3rem;
+		}
+	}
+
+	&.btn-project-pdf {
+		@include media-breakpoint-up(sm) {
+			--bs-btn-padding-y: 1rem;
+			--bs-btn-padding-x: 1.5rem;
+		}
+
+		&:hover,
+		&:focus {
+			.btn-text-hold {
+				&:after {
+					margin-top: 2px;
+				}
+			}
+		}
+
+		.btn-img-hold {
+			max-width: 81px;
+		}
+
+		.btn-text-hold {
+			position: relative;
+			padding-right: 30px;
+			padding-left: 10px;
+
+			&:after {
+				@extend .fa;
+				content: "\f33d";
+				transition: var(--animation-speed) ease-in-out all;
+				top: 50%;
+				right: 0;
+				margin-top: 0;
+				transform: translate(0, -50%);
+				line-height: 1;
+				position: absolute;
+				transition: $animation-speed ease-in-out all;
+			}
+		}
+	}
+}

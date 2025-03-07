@@ -1,0 +1,16 @@
+//Custom theme color maps
+$custom-theme-colors: (
+  'blue-dark': $blue-dark,
+  'blue-darkest': $blue-darkest,
+  "purple": $purple,
+  "light-purple": $light-purple,
+  "coral": $coral,
+  "stroke": $stroke,
+  "light-brown": $light-brown,
+  "white": $white,
+  "vista-white": $vista-white,
+  "vista-gray": $vista-gray,
+  "custom-color": #712cf9
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);

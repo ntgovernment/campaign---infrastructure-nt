@@ -1,0 +1,95 @@
+.ntg-image-comparison {
+  &__wrapper {
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      .cocoen-drag {
+        opacity: 0.8;
+      }
+    }
+
+    *,
+    &:before,
+    &:after {
+      box-sizing: inherit;
+    }
+
+    img,
+    picture > img {
+      max-width: none;
+      margin-top: 0 !important;
+    }
+
+    > img,
+    > picture > img {
+      display: block;
+      width: 100%;
+    }
+
+    > div {
+      &:first-child {
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  &__caption {
+    padding-top: 10px;
+  }
+
+  .cocoen-drag {
+    background: $white;
+    bottom: 0;
+    cursor: ew-resize;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    opacity: 1 !important;
+    transition: opacity 0.2s ease-in-out;
+
+    &:before {
+      content: '';
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      border: 2px solid $white;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      margin-top: -26px;
+    }
+
+    /* This is a js generated file, cannot use <i> tag here. */
+    &:after {
+      @extend .fa;
+      content: '\f337';
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $white;
+      margin-left: -16px;
+      margin-top: -1px;
+    }
+
+    + .cocoen-drag {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Content | Brainium Starter Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/f8d3342cae.js" crossorigin="anonymous"></script>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body class="standard">
+        <div id="wrapper">
+            <nav class="skip-link" aria-label="skip links navigation">
+                <a class="skip-link__link" href="#content">Skip to main content</a>
+                <a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+            </nav>
+    
+            <nav class="nav-menu-mobile" id="mmenu-wrapper">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">News</a>
+                        <ul>
+                            <li><a href="./news-item.html">News item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./components.html">Components</a>
+                        <ul>
+                            <li><a href="#">Inner Page 1</a></li>
+                            <li><a href="#">Inner Page 2</a></li>
+                            <li><a href="#">Inner Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="search-global">
+                <form action="/search/" method="get" accept-charset="UTF-8">
+                    <div class="search-global__row">
+                        <div class="search-global__field search-global__field--form">
+                            <label for="queries_name_query" class="sr-only">Search</label>
+                            <input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15" maxlength="128" class="form-search" placeholder="Search" />
+                            <button type="submit" id="edit-submit">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Popular searches</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-global__field search-global__field--list">
+                            <h3>Recently updated pages</h3>
+                            <ul>
+                                <li><a href="#">Visa</a></li>
+                                <li><a href="#">Citizenship</a></li>
+                                <li><a href="#">Change of situation</a></li>
+                                <li><a href="#">ImmiAccount</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" title="Close search" class="search-global__close">Close</a>
+                </form>
+            </div>
+
+            <div class="page-header-container">
+                <header class="ntg-header" role="banner">
+                    <div class="container">
+                        <div class="ntg-header__wrapper">
+                            <a class="ntg-header__logo" href="./index.html">
+                                <img class="ntg-header__image" alt="Northern Territory Government Logo" src="assets/images/logo-ntg-reverse.svg" width="198" height="71" />
+                            </a>
+                            <a class="ntg-header__text" href="./index.html">
+                                <h2 class="ntg-header__title">Squiz Matrix Template</h2>
+                                <div class="ntg-header__subtitle">Created by Brainium Labs</div>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <nav class="ntg-main-nav" id="mainmenu">
+                    <div class="container">
+                        <div class="ntg-main-nav__wrapper">
+                            <ul class="ntg-main-nav__links sf-menu">
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="active has-children">
+                                    <a href="./content.html">
+                                        Content
+                                    </a>
+                                    <ul>
+                                        <li class="has-children">
+                                            <a href="./content.html">
+                                                Content
+                                            </a>
+                                            <ul>
+                                                <li><a href="./content.html">Content</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./form.html">Form</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="./news.html">
+                                        News
+                                    </a>
+                                    <ul>
+                                        <li><a href="./news-item.html">News item</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./components.html">Components</a>
+                                </li>
+                            </ul>
+                            <button class="ntg-main-nav__search">
+                                <span class="visually-hidden">Search</span>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <div class="ntg-main-nav__mobile">
+                                <a href="#mmenu-wrapper" aria-label="Open or close menu">
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <section class="ntg-banner">
+                <div class="ratio ratio-32x9">
+                    <img src="assets/images/placeholder-banner.png" alt="Placeholder banner" />
+                    <div class="ntg-banner__content">
+                        <div class="container">
+                            <div class="ntg-banner__text">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Content</li>
+                                    </ol>
+                                </nav>
+                                <h1>Content</h1>
+                                <p>This is a description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <main class="py-4 py-sm-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 order-2 order-lg-1" id="content">
+                            <nav id="in-page-nav" aria-label="in page navigation">
+                                <h2>On this page</h2>
+                                <ul></ul>
+                            </nav>
+
+                            <h2>First heading</h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat justo enim, ac tristique nunc lacinia vitae. Nulla nisl nunc, interdum ac urna vitae, imperdiet
+                                fringilla nunc. Sed imperdiet turpis at orci sollicitudin maximus. Maecenas laoreet pharetra ligula, sit amet placerat leo aliquam sit amet. Nunc mattis placerat
+                                hendrerit. Nullam augue tellus, condimentum nec felis id, tempus porttitor velit. Praesent at luctus mi, vitae blandit ex. Nunc facilisis lorem id tellus fermentum
+                                sollicitudin.
+                            </p>
+
+                            <h2>Second heading</h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat justo enim, ac tristique nunc lacinia vitae. Nulla nisl nunc, interdum ac urna vitae, imperdiet
+                                fringilla nunc. Sed imperdiet turpis at orci sollicitudin maximus. Maecenas laoreet pharetra ligula, sit amet placerat leo aliquam sit amet. Nunc mattis placerat
+                                hendrerit. Nullam augue tellus, condimentum nec felis id, tempus porttitor velit. Praesent at luctus mi, vitae blandit ex. Nunc facilisis lorem id tellus fermentum
+                                sollicitudin.
+                            </p>
+
+                            <h2>Third heading</h2>
+
+                            <p class="full-width-override">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat justo enim, ac tristique nunc lacinia vitae. Nulla nisl nunc, interdum ac urna vitae, imperdiet
+                                fringilla nunc. Sed imperdiet turpis at orci sollicitudin maximus. Maecenas laoreet pharetra ligula, sit amet placerat leo aliquam sit amet. Nunc mattis placerat
+                                hendrerit. Nullam augue tellus, condimentum nec felis id, tempus porttitor velit. Praesent at luctus mi, vitae blandit ex. Nunc facilisis lorem id tellus fermentum
+                                sollicitudin.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-3 offset-lg-1 order-1 order-lg-2">
+                            <aside class="ntg-side-nav" aria-label="side navigation">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="sideNavHeading">
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#nav-default"
+                                            aria-expanded="false"
+                                            aria-controls="nav-default"
+                                        >
+                                            In this section
+                                        </button>
+                                    </h2>
+                                    <div id="nav-default" class="accordion-collapse collapse" aria-labelledby="sideNavHeading">
+                                        <h2 class="ntg-side-nav__title">In this section</h2>
+                                        <ul>
+                                            <li>
+                                                <a href="./index.html">Home</a>
+                                            </li>
+                                            <li class="active">
+                                                <span>Content</span>
+                                            </li>
+                                            <li>
+                                                <a href="./form.html">Form</a>
+                                            </li>
+                                            <li>
+                                                <a href="./news.html">News</a>
+                                                <a href="#" class="ntg-side-nav__collapser collapsed">
+                                                    <div class="collapser">Toggle</div>
+                                                </a>
+                                                <ul class="collapse">
+                                                    <li>
+                                                        <a href="./news-item.html">News item</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="./components.html">Components</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="back-to-top" aria-hidden="true">
+                <button>
+                    <span class="visually-hidden">Back to top</span>
+                    <i class="far fa-chevron-up"></i>
+                </button>
+            </div>
+
+            <footer class="ntg-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-xl-10">
+                            <div class="row">
+                                <nav class="col" aria-label="footer">
+                                    <ul>
+                                        <li>
+                                            <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy">Copyright, disclaimer and privacy&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/law/rights/freedom-of-information">Freedom of information&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://nt.gov.au/page/interpreter-services">Interpreter services&nbsp;<i class="far fa-external-link ms-05" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#"><span>Site map</span></a></li>
+                                        <li><a href="#"><span>Contacts</span></a></li>
+                                        <li><a href="#"><span>Feedback</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col">
+                                    <p>© 2022 Northern Territory Government.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" target="_blank" title="Opens in a new window">
+                                        <img alt="Northern Territory Government Logo" src="assets/images/logo-ntg-reverse.svg" width="198" height="71" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/bundle.js"></script>
+</html>

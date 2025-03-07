@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>News| Brainium Starter Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- fonts -->
+	<script src="https://kit.fontawesome.com/f8d3342cae.js" crossorigin="anonymous"></script>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="css/plugins.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav class="skip-link" aria-label="skip links navigation">
+			<a class="skip-link__link" href="#content">Skip to main content</a>
+			<a class="skip-link__link" href="#mainmenu">Skip to main navigation</a>
+		</nav>
+
+		<nav class="nav-menu-mobile" id="mmenu-wrapper">
+			<ul>
+				<li>
+					<a href="./index.html">Home</a>
+				</li>
+				<li>
+					<a href="./content.html">Content</a>
+					<ul>
+						<li><a href="#">Inner Page 1</a></li>
+						<li><a href="#">Inner Page 2</a></li>
+						<li><a href="#">Inner Page 3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="./form.html">Form</a>
+				</li>
+				<li>
+					<a href="./news.html">News</a>
+					<ul>
+						<li><a href="./news-item.html">News item</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="./components.html">Components</a>
+					<ul>
+						<li><a href="#">Inner Page 1</a></li>
+						<li><a href="#">Inner Page 2</a></li>
+						<li><a href="#">Inner Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="search-global">
+			<form action="/search/" method="get" accept-charset="UTF-8">
+				<div class="search-global__row">
+					<div class="search-global__field search-global__field--form">
+						<label for="queries_name_query" class="sr-only">Search</label>
+						<input autocomplete="off" type="search" id="queries_name_query" name="queries_name_query" value="" size="15"
+							maxlength="128" class="form-search" placeholder="Search" />
+						<button type="submit" id="edit-submit">
+							<span class="visually-hidden">Search</span>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="search-global__field search-global__field--list">
+						<h3>Popular searches</h3>
+						<ul>
+							<li><a href="#">Visa</a></li>
+							<li><a href="#">Citizenship</a></li>
+							<li><a href="#">Change of situation</a></li>
+							<li><a href="#">ImmiAccount</a></li>
+						</ul>
+					</div>
+					<div class="search-global__field search-global__field--list">
+						<h3>Recently updated pages</h3>
+						<ul>
+							<li><a href="#">Visa</a></li>
+							<li><a href="#">Citizenship</a></li>
+							<li><a href="#">Change of situation</a></li>
+							<li><a href="#">ImmiAccount</a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="#" title="Close search" class="search-global__close">Close</a>
+			</form>
+		</div>
+
+		<div class="page-header-container bg-white">
+			<header class="ntg-header" role="banner">
+				<div class="container">
+					<div class="ntg-header__wrapper">
+						<div class="ntg-header__logo-hold">
+							<div class="ntg-header__logo-hold-frame">
+								<div class="ntg-header__logo-left">
+									<a class="ntg-header__logo" href="./index.html">
+										<img class="ntg-header__image" alt="Northern Territory Government Logo"
+											src="assets/images/ntg-black-logo.svg" width="150" height="55" />
+									</a>
+								</div>
+								<div class="ntg-header__logo-right">
+									<a class="ntg-header__logo" href="./index.html">
+										<img class="ntg-header__image" alt="Infrastructure Northern Territory Logo"
+											src="assets/images/site-logo.svg" width="100" height="90" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="ntg-header__content">
+							<nav class="ntg-main-nav" id="mainmenu">
+								<div class="ntg-main-nav__wrapper">
+									<ul class="ntg-main-nav__links">
+										<li class="active">
+											<a href="./index.html">Home</a>
+										</li>
+										<li class="ntg-main-nav__link has-children">
+											<a href="./about-us.html" role="button">About us</a>
+											<div class="ntg-main-nav__panel">
+												<div class="container">
+													<div class="ntg-main-nav__panel-wrapper">
+														<div class="ntg-main-nav__panel-columns">
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">About us</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Framework</a>
+																	</li>
+																	<li>
+																		<a href="#">Our Minister</a>
+																	</li>
+																	<li>
+																		<a href="#">Corporate Executive</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Enabling Infrastructure projects</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Ship Lift</a>
+																	</li>
+																	<li>
+																		<a href="#">Civic and State Square revitalisation</a>
+																	</li>
+																	<li>
+																		<a href="#">Marine Industry Park</a>
+																	</li>
+																	<li>
+																		<a href="#">Middle Arm Sustainable Development
+																			Precinct</a>
+																	</li>
+																	<li>
+																		<a href="#">AROWS</a>
+																	</li>
+																	<li>
+																		<a href="#">Logistics Hubs</a>
+																	</li>
+																	<li>
+																		<a href="#">Frances Bay</a>
+																	</li>
+																	<li>
+																		<a href="#">Gunyanara (Gove Port) Tourism Precinct</a>
+																	</li>
+																	<li>
+																		<a href="#">Mandorah Marine Masterplan</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Strategic priorities</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Cross cutting themes</a>
+																	</li>
+																	<li>
+																		<a href="#">Our Industry Sectors</a>
+																	</li>
+																	<li>
+																		<a href="#">Our Enabling Infrastructure Eco Systems</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Publications</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Strategy</a>
+																	</li>
+																	<li>
+																		<a href="#">Infra Audit</a>
+																	</li>
+																	<li>
+																		<a href="#">2023 NT Infrastructure Plan and
+																			Pipelines</a>
+																	</li>
+																	<li>
+																		<a href="#">Infra Audit</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Contact</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Strategy</a>
+																	</li>
+																	<li>
+																		<a href="#">Infra Audit</a>
+																	</li>
+																	<li>
+																		<a href="#">2023 NT Infrastructure Plan and
+																			Pipelines</a>
+																	</li>
+																	<li>
+																		<a href="#">Infra Audit</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="ntg-main-nav__link has-children">
+											<a href="./projects.html" role="button">Enabling Infrastructure projects</a>
+											<div class="ntg-main-nav__panel">
+												<div class="container">
+													<div class="ntg-main-nav__panel-wrapper has-description-on-left">
+														<div class="ntg-main-nav__panel-group" role="group">
+															<h2>
+																<a href="#">Opportunities</a>
+															</h2>
+															<p>Invest in the Future of the Northern Territory</p>
+														</div>
+														<div class="ntg-main-nav__panel-columns">
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Minerals</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Critical Minerals</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Tourism</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Infrastructure</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Energy</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Oil & Gas</a>
+																	</li>
+																	<li>
+																		<a href="#">Renewables</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Space</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Agriculture</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Defence Support</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Advanced Manufacturing</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Digital</a></h3>
+																<ul>
+																	<li>
+																		<a href="#">Data Centres</a>
+																	</li>
+																	<li>
+																		<a href="#">Submarine Cables and Networks</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="ntg-main-nav__link has-children">
+											<a href="#" role="button">NT Infrastructure Strategy</a>
+											<div class="ntg-main-nav__panel">
+												<div class="container">
+													<div class="ntg-main-nav__panel-wrapper">
+														<div class="ntg-main-nav__panel-group" role="group">
+															<h2>
+																<a href="#">Tacticals</a>
+															</h2>
+															<p>Invest in the Future of the Northern Territory</p>
+														</div>
+														<div class="ntg-main-nav__panel-columns">
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Darwin Convention Centre Hotel</a></h3>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="ntg-main-nav__link has-children">
+											<a href="#" role="button">Publications</a>
+											<div class="ntg-main-nav__panel">
+												<div class="container">
+													<div class="ntg-main-nav__panel-wrapper">
+														<div class="ntg-main-nav__panel-group" role="group">
+															<h2>
+																<a href="#">Here to Help</a>
+															</h2>
+															<p>Invest in the Future of the Northern Territory</p>
+														</div>
+														<div class="ntg-main-nav__panel-columns">
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Meet the team</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Funding</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Why Invest in the NT</a></h3>
+															</div>
+															<div class="ntg-main-nav__panel-group" role="group">
+																<h3><a href="#">Major Project Status</a></h3>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="ntg-main-nav__link has-children">
+											<a href="#" role="button">Contact us</a>
+											<div class="ntg-main-nav__panel">
+												<div class="container">
+													<div class="ntg-main-nav__panel-wrapper">
+														<div class="ntg-main-nav__panel-group" role="group">
+															<h2>
+																<a href="#">Contact</a>
+															</h2>
+															<p>Invest in the Future of the Northern Territory</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<button class="ntg-main-nav__search">
+										<span class="visually-hidden">Search</span>
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+									<div class="ntg-main-nav__mobile">
+										<a href="#mmenu-wrapper" aria-label="Open or close menu">
+											<span aria-hidden="true"></span>
+										</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<main class="py-4 py-sm-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8 order-2 order-lg-1" id="content">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">News</li>
+							</ol>
+						</nav>
+
+						<h1>News</h1>
+
+						<div class="ntg-news-listing">
+							<div class="ntg-news-listing__item first">
+								<h3><a href="./news-item.html">News item</a></h3>
+								<div class="ntg-news-listing__metadata">
+									<div class="ntg-news-listing__date">12/12/2021</div>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							<div class="ntg-news-listing__item">
+								<h3><a href="./news-item.html">News item</a></h3>
+								<div class="ntg-news-listing__metadata">
+									<div class="ntg-news-listing__date">12/12/2021</div>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							<div class="ntg-news-listing__item">
+								<h3><a href="./news-item.html">News item</a></h3>
+								<div class="ntg-news-listing__metadata">
+									<div class="ntg-news-listing__date">12/12/2021</div>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-12 col-lg-3 offset-lg-1 order-1 order-lg-2">
+						<aside class="ntg-side-nav" aria-label="side navigation">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="sideNavHeading">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#nav-default" aria-expanded="false" aria-controls="nav-default">
+										In this section
+									</button>
+								</h2>
+								<div id="nav-default" class="accordion-collapse collapse" aria-labelledby="sideNavHeading">
+									<h2 class="ntg-side-nav__title">In this section</h2>
+									<ul>
+										<li>
+											<a href="./index.html">Home</a>
+										</li>
+										<li>
+											<a href="./content.html">Content</a>
+										</li>
+										<li>
+											<a href="./form.html">Form</a>
+										</li>
+										<li class="active">
+											<span>News</span>
+											<a href="#" class="ntg-side-nav__collapser collapsed">
+												<div class="collapser">Toggle</div>
+											</a>
+											<ul class="collapse">
+												<li>
+													<a href="./news-item.html">News item</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="./components.html">Components</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="back-to-top" aria-hidden="true">
+			<button>
+				<span class="visually-hidden">Back to top</span>
+				<i class="far fa-chevron-up"></i>
+			</button>
+		</div>
+
+		<footer class="ntg-footer overflow-hidden" role="contentinfo">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-8 col-xl-9 ntg-footer__left-block">
+						<div class="row">
+							<div class="ntg-footer__top">
+								<div class="row gy-4">
+									<div class="col-12 col-xl-5 col-xxl-4 ntg-footer__logo-block">
+										<div class="ntg-footer__logo-group">
+											<a href="#" target="_blank" title="Opens in a new window">
+												<img alt="Infrastructure Australia's Northern Territory Logo" src="assets/images/logo-white.svg"
+													width="106" height="106" />
+											</a>
+										</div>
+										<div class="ntg-footer__logo-btn">
+											<a href="Infrastructure.NT@nt.gov.au" class="btn btn-outline btn-outline-primary" target="_blank"
+												title="Opens in a new window">
+												<i class="fas fa-envelope" aria-hidden="true"></i> Subscribe for updates
+											</a>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 col-xxl-4 ntg-footer__contact-block">
+										<h3>Contact us</h3>
+										<ul class="list-inline fs-6">
+											<li>
+												<div class="contact-label">Email:</div>
+												<div class="contact-value"><a href="mailto:email@gmail.com">email@gmail.com</a>
+												</div>
+											</li>
+											<li>
+												<div class="contact-label">Phone:</div>
+												<div class="contact-value"><a href="tel:0889000000">(08) 8900 0000</a>
+												</div>
+											</li>
+											<li>
+												<div class="contact-label">Other:</div>
+												<div class="contact-value"><a href="#">View all contacts</a></div>
+											</li>
+										</ul>
+
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3 col-xxl-4 ntg-footer__contact-block">
+										<h3>Feedback</h3>
+										<ul class="list-block fs-6">
+											<li>
+												<div class="contact-label">Email us at</div>
+												<div class="contact-value"><a
+														href="mailto:Infrastructure.NT@nt.gov.au">Infrastructure.NT@nt.gov.au</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="ntg-footer__bottom">
+								<nav class="col ntg-footer__copyright" aria-label="footer">
+									<ul>
+										<li>
+											<p>&copy; Copyright 2023 NT Infrastructure services</p>
+										</li>
+										<li>
+											<a href="#">Disclaimer, Privacy and Copyright</a>
+										</li>
+										<li>
+											<a href="#">Accessibility</a>
+										</li>
+										<li>
+											<a href="#">Email Web manager</a>
+										</li>
+										<li><a href="#"><span>Site map</span></a></li>
+										<li><a href="#"><span>Contact us</span></a></li>
+										<li><a href="#"><span>Interpreter</span></a></li>
+									</ul>
+								</nav>
+								<div class="ntg-footer__acknowledgement">
+									The Northern Territory Government respectfully acknowledges Aboriginal and Torres
+									Strait
+									Islander
+									peoples as the First Nations people of this country. We acknowledge the continuing
+									connection to
+									lands, waters and communities, and the evolving cultures of all our First Nations
+									peoples.
+									We pay our
+									respects to all Aboriginal and Torres Strait Islander cultures, and to their leaders
+									- past,
+									present,
+									and emerging.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3 ntg-footer__right-block">
+						<div class="ntg-footer__right-block-wrap">
+							<nav class="ntg-footer__menu">
+								<h3 class="ntg-footer__menu-title">Find out more</h3>
+								<ul>
+									<li><a href="#" class="external-link">DIPL</a></li>
+									<li><a href="#" class="external-link">Invest NT</a></li>
+									<li><a href="#" class="external-link">Defence</a></li>
+									<li><a href="#" class="external-link">Territory renewables</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+<!-- scripts -->
+<script type="text/javascript" src="js/bundle.js"></script>
+
+</html>

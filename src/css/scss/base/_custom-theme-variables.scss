@@ -1,0 +1,10 @@
+// light brown theme option
+[data-bs-theme="light-brown"] {
+  --bs-body-bg: #{$light-brown};
+
+  .card {
+    --bs-card-bg: #{$white};
+    --bs-card-hover-bg: #{$gray-100};
+    --bs-card-border-color: transparent;
+  }
+}

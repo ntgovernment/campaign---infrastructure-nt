@@ -1,0 +1,76 @@
+// extra spacing top and bottom
+.extra-spacing-top-bottom {
+  &.py-5 {
+    @include media-breakpoint-up(lg) {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+  }
+}
+
+.extra-spacing-top {
+  &.py-5 {
+    @include media-breakpoint-up(lg) {
+      padding-top: 5rem !important;
+    }
+  }
+}
+
+.extra-spacing-bottom {
+  &.py-5 {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 5rem !important;
+    }
+  }
+}
+
+.section-has-bg {
+  position: relative;
+  --block-bg: #{$white-smoke};
+  --block-link-color: #{$white};
+  --block-color: #{$white};
+  color: var(--block-color);
+
+  a:not(.btn) {
+    color: var(--block-link-color);
+  }
+
+  &:after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    margin: 0 -9999px;
+    z-index: -1;
+    background: var(--block-bg);
+  }
+
+  &.py-5 {
+    @include media-breakpoint-up(lg) {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+  }
+
+  &--white-smoke {
+    --block-bg: #{$white-smoke};
+    --block-color: #{$gray-800};
+    --block-link-color: var(--block-color);
+
+    .card {
+      --bs-card-hover-bg: #{$gray-200};
+    }
+  }
+
+  &--light-brown {
+    --block-bg: #{$light-brown};
+    --block-color: #{$gray-800};
+    --block-link-color: var(--block-color);
+  }
+
+  &--primary {
+    --block-bg: #{$primary};
+  }
+}

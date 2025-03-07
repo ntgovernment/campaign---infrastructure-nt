@@ -1,0 +1,6 @@
+.ntg-link-block {
+    ul {
+        @extend .list-unstyled;
+        @extend .link-listing--has-right-arrow;
+    }
+}

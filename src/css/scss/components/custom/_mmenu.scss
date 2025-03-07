@@ -1,0 +1,102 @@
+// fix content flash
+#mmenu-wrapper:not(.mm-menu) {
+    display: none;
+}
+
+.mm-panels {
+    > .mm-panel {
+        background: $primary;
+
+        .mm-navbar {
+            background: $primary;
+            border-color: rgba(255, 255, 255, 0.4);
+
+            > a {
+                transition: 0.2s background-color ease-in-out;
+            }
+
+            .mm-btn--prev {
+                width: 50px;
+
+                &:before {
+                    border-color: rgba(255, 255, 255, 0.4);
+                }
+            }
+
+            .mm-navbar__title {
+                color: $white;
+                padding: 20px;
+                justify-content: start;
+
+                > span {
+                    text-align: left;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                .mm-btn--prev,
+                .mm-btn--prev + .mm-navbar__title {
+                    background-color: darken($primary, 10%);
+                }
+            }
+        }
+
+        .mm-listview {
+            margin: 20px -20px;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+
+            a:not(.mm-btn--next) {
+                border-left: 0px solid $secondary;
+                transition: 0.1s border-left-width ease-in-out, 0.2s background-color ease-in-out;
+
+                &:hover,
+                &:focus {
+                    background-color: darken($primary, 10%);
+                    border-left-width: 5px;
+                }
+            }
+
+            a.mm-btn--next {
+                transition: 0.2s background-color ease-in-out;
+
+                &:hover,
+                &:focus {
+                    background-color: darken($primary, 10%);
+                }
+            }
+        }
+
+        .mm-listitem {
+            padding: 0 20px 1px 20px;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .mm-listitem__btn {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .mm-listitem__text {
+            white-space: normal;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .mm-btn {
+            &:after {
+                border-color: rgba(255, 255, 255, 0.4);
+            }
+        }
+
+        a {
+            color: $white;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

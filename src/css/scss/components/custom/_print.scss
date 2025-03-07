@@ -1,0 +1,115 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    #wrapper main {
+        flex: 0 0 auto !important;
+    }
+
+    .page-header-container {
+        position: static !important;
+        display: block !important;
+        transform: translateY(0) !important;
+        box-shadow: none !important;
+    }
+
+    .content-pull-up,
+    .ntg-banner {
+        margin-top: 0 !important;
+    }
+
+    .ntg-banner {
+        padding: 2rem 0;
+        min-height: unset !important;
+    }
+    .ntg-banner__content {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .ntg-link-block,
+    .ntg-link-block a,
+    .section-has-bg--primary,
+    .section-has-bg--light-brown,
+    .section-has-bg--white-smoke,
+    .ntg-footer,
+    .ntg-cards--featured-project,
+    .ntg-callout .callout,
+    .ntg-banner--has-bg,
+    [data-bs-theme],
+    .pagination,
+    .section-has-bg:after,
+    .ntg-banner__content {
+        --bs-body-bg: #FFF;
+        background-color: #FFF !important;
+        color: #000 !important;
+        --block-color: #000 !important;
+    }
+
+    .ntg-link-block,
+    .ntg-callout .callout {
+        border: 2px solid #000;
+    }
+
+    .ntg-footer {
+        padding-top: 0;
+    }
+
+    .ntg-footer__left-block,
+    .container,
+    .ntg-banner__text .col-left-block {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+
+    .ntg-banner:not(.ntg-banner--has-description-media) .ntg-banner__overlay,
+    .breadcrumb,
+    .breadcrumb-holder,
+    .ntg-side-nav,
+    #in-page-nav,
+    .ntg-header__content,
+    .btn,
+    .ntg-footer__right-block,
+    .ntg-footer__top,
+    .ntg-footer__copyright ul li:not(:first-child),
+    .ntg-homepage-banner,
+    .ntg-bottom-content--archive-links,
+    .ntg-carousel,
+    .ntg-flickity-carousel,
+    .ntg-image-comparison,
+    .back-to-top,
+    .ntg-banner__video-hold-inline,
+    .interactive-map,
+    .ntg-video-embed,
+    .ntg-banner:not(.ntg-banner--has-description-media) .ntg-banner__text .col-right-block {
+        display: none !important;
+    }
+
+    .accordion {
+        --bs-accordion-color: #{$black};
+        --bs-accordion-active-color: #{$black};
+        --bs-accordion-btn-color: #{$black};
+        --bs-accordion-border-width: 2px;
+        --bs-accordion-border-color: #{$black};
+    }
+
+    .accordion-button {
+        box-shadow: none !important;
+
+        &::after {
+            transform: rotate(180deg) !important;
+        }
+    }
+
+    .accordion-item:not(:first-of-type) {
+        border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    }
+
+    .accordion .collapse,
+    .ntg-cards > .container > .row,
+    .ntg-cards > .row,
+    .card--member {
+        display: block !important;
+    }
+}

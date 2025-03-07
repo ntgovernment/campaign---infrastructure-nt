@@ -1,0 +1,24 @@
+.ntg-rich-txt-image {
+  $this: &;
+
+  .row.image-text-row {
+    --bs-gutter-y: 2rem;
+    --bs-gutter-x: 3rem;
+  }
+
+  &.image-on-right {
+    .col-image {
+      @include media-breakpoint-up(lg) {
+        order: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .col-text {
+      @include media-breakpoint-up(lg) {
+        order: 0;
+      }
+    }
+  }
+}

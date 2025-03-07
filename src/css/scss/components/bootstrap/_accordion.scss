@@ -1,0 +1,47 @@
+.ntg-accordions {
+	.btn-link {
+		text-decoration: transparent;
+		font-weight: 700;
+		--bs-btn-padding-y: 0;
+		--bs-btn-padding-x: 0;
+		--bs-btn-hover-color: #{$gray-700};
+		--bs-btn-active-color: #{$gray-700};
+	}
+}
+
+.accordion {
+	--bs-accordion-btn-padding-x: 1.25rem;
+	--bs-accordion-btn-padding-y: 1.25rem;
+}
+
+.accordion-button {
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		@include focus();
+	}
+}
+
+.accordion {
+	&-header {
+		button {
+			font-weight: 500;
+			color: $blue;
+
+			@include media-breakpoint-down(lg) {
+				font-size: 1.125rem;
+			}
+
+			@include media-breakpoint-up(lg) {
+				font-size: 1.25rem;
+			}
+
+		}
+
+		&:target {
+			display: inherit;
+		}
+	}
+}

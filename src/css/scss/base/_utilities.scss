@@ -1,0 +1,43 @@
+:root {
+  --animation-speed: 300ms;
+
+  @include media-breakpoint-down(sm) {
+    --container-width: 100%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    --container-width: 540px;
+  }
+
+  @include media-breakpoint-only(md) {
+    --container-width: 720px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    --container-width: 980px;
+  }
+
+  @include media-breakpoint-only(xl) {
+    --container-width: 1320px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    --container-width: 1596px;
+  }
+}
+
+$utilities: map-merge($utilities,
+    ("object-position": (property: object-position,
+        class: object-position,
+        values: top left right bottom)));
+
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+$utilities: map-merge($utilities,
+    ("color": map-merge(map-get($utilities, "color"),
+        (values: map-merge(map-get(map-get($utilities, "color"), "values"),
+            ($all-colors ),
+          ),
+        ),
+      ),
+    ));
